@@ -13,7 +13,7 @@ plt.scatter(df.area, df.price, color='red', marker='+')
 reg=linear_model.LinearRegression()
 reg.fit(df[['area']],df.price)
 
-# print(reg.predict([[3300]]))
+print(reg.predict([[3300]]))
 # print(reg.predict([[5000]]))
 
 d=pd.read_csv('areas.csv')
